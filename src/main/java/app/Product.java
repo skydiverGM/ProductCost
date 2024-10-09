@@ -29,6 +29,6 @@ public class Product {
                 ", quota is " + quota + " " +
                 Constants.MEASURE +
                 ", price is " + Constants.CURRENCY +
-                " " + price + ".";
+                " " + price + "." + "\nCost is " + Constants.CURRENCY;
     }
 }

@@ -14,23 +14,14 @@ public class Main {
         // Розраховуємо вартість товару, з урахуванням доставки
         CalcCostDelivery costDelivery = new CalcCostDelivery();
         double deliveryCost = costDelivery.calcCost(product);
-        // Формуємо виведення
-        String baseOutput = product + "\nCost is " +
-                Constants.CURRENCY + " " + baseCost + ".";
-        String deliveryOutput = product + "\nCost is " +
-                Constants.CURRENCY + " " + deliveryCost + ".";
-        // Виводимо результат
-        getOutput(baseOutput);
-        getOutput(deliveryOutput);
+
+        System.out.println(product + " " + baseCost + ".");
+        System.out.println(product + " " + deliveryCost + ".");
     }
 
     // Набір вхідних даних
     public static String[] getData() {
         return new String[] {"abc", "5", "2.5"};
-    }
-
-    public static void getOutput(String output) {
-        System.out.println(output);
     }
 
 }
